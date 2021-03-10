@@ -42,11 +42,11 @@ var tenwords = [10]string{
 }
 
 //MaxNumber is to denote maximum number that can be passed
-const maxNumber = 99999
+const MaxNumber = 99999
 
 //Convert converts a integer between 0 to MaxNumber to words
 func Convert(number int) (string, error) {
-	if number < 0 || number > maxNumber {
+	if number < 0 || number > MaxNumber {
 		return "", errors.New("number not in valid range")
 	}
 	result := ""
