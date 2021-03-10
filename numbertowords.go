@@ -1,3 +1,4 @@
+// Package numbertowords allows numbers to be converted to English words.
 package numbertowords
 
 import (
@@ -45,7 +46,7 @@ const maxNumber = 99999
 
 //Convert converts a integer between 0 to MaxNumber to words
 func Convert(number int) (string, error) {
-	if number < 0 || number > MaxNumber {
+	if number < 0 || number > maxNumber {
 		return "", errors.New("number not in valid range")
 	}
 	result := ""
